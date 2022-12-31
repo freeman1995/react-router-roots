@@ -1,0 +1,26 @@
+{
+  "name": "react-router-roots",
+  "version": "1.0.0",
+  "description": "typed routes for react router",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeman1995/react-router-roots.git"
+  },
+  "author": "freeman1995",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freeman1995/react-router-roots/issues"
+  },
+  "homepage": "https://github.com/freeman1995/react-router-roots#readme",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "tslib": "^2.4.1"
+  }
+}
