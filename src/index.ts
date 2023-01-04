@@ -11,7 +11,7 @@ type ParentRoute = {
   children: RoutesPredicate;
 };
 
-type RoutesPredicate = {
+export type RoutesPredicate = {
   [key: RouteName]: RoutePath | ParentRoute;
 };
 
