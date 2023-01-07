@@ -61,3 +61,6 @@ router.navigate(applyPathParams(routes.users.profile, { userId: 4 }));
 router.navigate(applyPathParams(routes.store.item, { itemId: 3 }));
 router.navigate(applyPathParams(routes.store.items, { area: "US", category: "food" }));
 ```
+
+![image](https://user-images.githubusercontent.com/16955580/211160430-09307e7e-28d0-479d-a73f-7dc734667d7e.png)
+![image](https://user-images.githubusercontent.com/16955580/211160436-61d3142f-f82c-44ac-8616-2ac987ef3d43.png)
