@@ -4,7 +4,7 @@ type PathParamValue = string | number;
 
 type JoinPaths<A extends RoutePath, B extends RoutePath> = "/" extends B
   ? A
-  : `${A}${B}`;
+  : `${A}/${B}`;
 
 type ParentRoute = {
   path: RoutePath;
