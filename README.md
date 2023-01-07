@@ -3,6 +3,8 @@ typed routes for react-router
 
 # API
 ```typescript
+import { RoutesPredicate, makeAbsolute, applyPathParams } from "react-router-roots";
+
 const routerRoutes = {
     contact: "contact",
     dashboard: "dashboard",

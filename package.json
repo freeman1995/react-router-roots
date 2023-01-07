@@ -1,6 +1,6 @@
 {
   "name": "react-router-roots",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "typed routes for react router",
   "main": "build/index.js",
   "scripts": {
