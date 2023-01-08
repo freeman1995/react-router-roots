@@ -1,0 +1,36 @@
+name: Manual Publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        type: choice
+        description: "Version change"
+        required: true
+        default: "patch"
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  build_and_publish:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Release Tag
+        run: |
+          git config --global user.email "tohar.kubani@gmail.com"
+          git config --global user.name "freeman1995"
+          npm version ${{ github.event.inputs.version }}
+          git push origin master --tags
+
+      - name: Build & Publish
+        run: |
+          yarn
+          yarn build
+          npm publish
